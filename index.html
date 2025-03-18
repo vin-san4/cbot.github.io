@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBOT - AI Chatbot Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">CBOT</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta-button">Join Waitlist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your AI Assistant for <span class="highlight">Smarter Conversations</span></h1>
+                <p>CBOT helps businesses automate customer support with intelligent, natural conversations powered by advanced AI.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="button primary">Join Waitlist</a>
+                    <a href="#demo" class="button secondary">Try Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-card"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to deliver exceptional customer service</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🧠</div>
+                    <h3>Advanced AI</h3>
+                    <p>Powered by cutting-edge language models for natural conversations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⏰</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Always available to assist your customers, no matter the time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Quick Integration</h3>
+                    <p>Easy to integrate with your existing systems and workflows</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade security to protect your sensitive conversations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2>See CBOT in Action</h2>
+            <p class="section-subtitle">Try our interactive demo to experience the power of CBOT</p>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Chat with CBOT</h3>
+                </div>
+                <div class="chat-messages">
+                    <!-- Messages will be added here by JavaScript -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message..." id="message-input">
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that best fits your needs</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$19<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>Up to 1,000 conversations/month</li>
+                        <li>Basic AI capabilities</li>
+                        <li>Email support</li>
+                        <li>1 team member</li>
+                    </ul>
+                    <a href="#contact" class="button secondary">Join Waitlist</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <div class="price">$49<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>Up to 5,000 conversations/month</li>
+                        <li>Advanced AI capabilities</li>
+                        <li>Priority support</li>
+                        <li>5 team members</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <a href="#contact" class="button primary">Join Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About CBOT</h2>
+                    <p>At CBOT, we're revolutionizing customer service through artificial intelligence. Founded by Vinay Sankar Perna, our mission is to help businesses provide exceptional support while reducing operational costs.</p>
+                    <p>Our team of engineers and AI specialists work tirelessly to ensure CBOT remains at the cutting edge of conversational AI technology.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Join the Waitlist</h2>
+            <p class="section-subtitle">Be among the first to experience the future of customer service</p>
+            <div class="contact-form">
+                <form id="waitlist-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company">
+                    </div>
+                    <button type="submit" class="button primary">Join Waitlist</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
